@@ -140,7 +140,7 @@ class StudentTest {
         try {
             System.setIn(new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8)));
             System.setOut(new PrintStream(buffer, true, StandardCharsets.UTF_8));
-            Main.main(new String[0]);
+            student.main(new String[0]);
         } finally {
             System.setIn(originalIn);
             System.setOut(originalOut);
